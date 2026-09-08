@@ -8,7 +8,10 @@
 }:
 
 (qemu.override {
-  hostCpuTargets = [ "xtensa-softmmu" ];
+  hostCpuTargets = [
+    "xtensa-softmmu"
+    "riscv32-softmmu"
+  ];
   capstoneSupport = false;
   guestAgentSupport = false;
   smartcardSupport = false;
